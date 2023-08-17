@@ -3,8 +3,8 @@
 <head><title>ลงทะเบียนไลน์ใหม่</title></head>
  
 <body>
- 
 <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+<!-- script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script -->
  
 <script>
  
@@ -14,7 +14,7 @@
      `https://docs.google.com/forms/d/e/1FAIpQLScFcFlV_cSPSzubTw8j8kRnF0bJDx5CQdlR5A6K5u0PSpfgxg/viewform?usp=pp_url
 &entry.1052335127=${profile.userId}
 &entry.1364002331=${profile.displayName}
-&entry.1570719506=${profile.statusMessage}
+&entry.1570719506=${liff.getDecodedIDToken().email}
 &entry.104443221=${profile.pictureUrl}`
      );
    }
