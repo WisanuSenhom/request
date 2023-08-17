@@ -1,0 +1,9 @@
+  async function main() {
+     await liff.init({ liffId: "1654797991-BXng4Kgv" })
+       if (liff.isLoggedIn()) {
+         getUserProfile()
+       } else {
+         liff.login()
+       }
+   }
+   main()
